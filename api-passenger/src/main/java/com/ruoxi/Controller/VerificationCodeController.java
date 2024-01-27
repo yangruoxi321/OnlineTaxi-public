@@ -14,7 +14,6 @@ public class VerificationCodeController {
     @GetMapping("/verification-code")
    public String VerifyCode(@RequestBody getRequest request){
         String phoneNumber = request.getPhoneNumber();
-        int a = 1;
         return verificationService.generateCode(phoneNumber);
     }
 }
