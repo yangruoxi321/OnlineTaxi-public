@@ -1,2 +1,6 @@
-package com.ruoxi.requestEntity;public class getRequest {
+package com.ruoxi.requestEntity;
+import lombok.Data;
+@Data
+public class getRequest {
+    private String phoneNumber;
 }
