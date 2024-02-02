@@ -4,18 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/src/main/java/com/ruoxi/ServiceRegistrationAndDiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/VerificationCodeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verification-code/src/test/java/com/example/verificationcode/VerificationCodeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Controller/VerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Controller/VerificationCodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoxi/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +51,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,13 +61,16 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2bVTUuVmVsnVt38N6VfjIGONYCV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Maven.api-passenger [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -55,19 +79,33 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.PassengerApplication.executor": "Run",
+    "Spring Boot.ServiceRegistrationAndDiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.VerificationCodeApplication (1).executor": "Run",
+    "Spring Boot.VerificationCodeApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.import",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.VerificationCodeApplication (1)">
     <configuration name="PassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-passenger" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoxi.PassengerApplication" />
@@ -81,8 +119,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceRegistrationAndDiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoxi.ServiceRegistrationAndDiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VerificationCodeApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="verification-code" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoxi.verificationcode.VerificationCodeApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoxi.verificationcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.VerificationCodeApplication (1)" />
         <item itemvalue="Spring Boot.PassengerApplication" />
       </list>
     </recent_temporary>
@@ -108,7 +167,21 @@
       <workItem from="1706322093838" duration="21000" />
       <workItem from="1706322120579" duration="19000" />
       <workItem from="1706322140365" duration="1419000" />
+      <workItem from="1706408710356" duration="27000" />
+      <workItem from="1706842483943" duration="2584000" />
+      <workItem from="1706845080868" duration="102000" />
+      <workItem from="1706845189821" duration="1190000" />
+      <workItem from="1706846387697" duration="4333000" />
     </task>
+    <task id="LOCAL-00001" summary="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
+      <option name="closed" value="true" />
+      <created>1706335528826</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706335528826</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +197,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'." />
   </component>
 </project>
