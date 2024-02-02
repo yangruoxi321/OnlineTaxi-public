@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-registry/src/main/java/com/ruoxi/ServiceRegistrationAndDiscoveryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/VerificationCodeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/verification-code/src/test/java/com/example/verificationcode/VerificationCodeApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'.">
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/constant/ConstantResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/datatoobject/ResponseResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/response/DigitalCodeResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoxi/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +159,7 @@
       <workItem from="1706842483943" duration="2584000" />
       <workItem from="1706845080868" duration="102000" />
       <workItem from="1706845189821" duration="1190000" />
-      <workItem from="1706846387697" duration="4333000" />
+      <workItem from="1706846387697" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
       <option name="closed" value="true" />
@@ -181,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706335528826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'.">
+      <option name="closed" value="true" />
+      <created>1706851669780</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706851669780</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +197,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'." />
+    <MESSAGE value="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'." />
   </component>
 </project>
