@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'.">
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/constant/ConstantResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/datatoobject/ResponseResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/response/DigitalCodeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/redisEntity/getRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/requestEntity/VerifyCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/serviceClient/VerificationCodeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/response/VerifiedTokenResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Controller/VerificationCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Controller/VerificationCodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/PassengerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/PassengerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/constant/ConstantResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/ConstantResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/datatoobject/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/datatoobject/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-common/src/main/java/response/DigitalCodeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/response/DigitalCodeResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/verification-code/src/main/java/com/ruoxi/verificationcode/Controller/DigitalCodeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -64,8 +77,10 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.PassengerApplication.executor": "Run",
     "Spring Boot.ServiceRegistrationAndDiscoveryServiceApplication.executor": "Run",
     "Spring Boot.VerificationCodeApplication (1).executor": "Run",
@@ -74,14 +89,21 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/22839/IdeaProjects/OnlineTaxi-public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.externalTools",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis"
+    ]
   }
 }]]></component>
   <component name="RunDashboard">
@@ -93,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.VerificationCodeApplication (1)">
+  <component name="RunManager">
     <configuration name="PassengerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-passenger" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoxi.PassengerApplication" />
@@ -127,12 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.VerificationCodeApplication (1)" />
-        <item itemvalue="Spring Boot.PassengerApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -160,6 +176,7 @@
       <workItem from="1706845080868" duration="102000" />
       <workItem from="1706845189821" duration="1190000" />
       <workItem from="1706846387697" duration="7182000" />
+      <workItem from="1706930035250" duration="11414000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
       <option name="closed" value="true" />
@@ -177,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706851669780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'.">
+      <option name="closed" value="true" />
+      <created>1706930118574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706930118574</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +222,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'." />
+    <MESSAGE value="Add ConstantResult enum and update DigitalCodeController &#10;&#10;Added new ConstantResult enum class for success and failure responses. Refactored the DigitalCodeController to use the new ResponseResult and DigitalCodeResponse classes for a more consistent API response structure. Made corresponding updates to the workspace configuration." />
     <MESSAGE value="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'." />
     <option name="LAST_COMMIT_MESSAGE" value="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

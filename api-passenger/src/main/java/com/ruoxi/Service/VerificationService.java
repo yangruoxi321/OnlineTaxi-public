@@ -1,24 +1,54 @@
 package com.ruoxi.Service;
 
-import net.sf.json.JSONObject;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
+import com.google.common.base.Strings;
+import com.ruoxi.ConstantResult;
+import com.ruoxi.datatoobject.ResponseResult;
+import com.ruoxi.response.DigitalCodeResponse;
+import com.ruoxi.response.VerifiedTokenResponse;
+import com.ruoxi.serviceClient.VerificationCodeClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class VerificationService {
-    public String generateCode(String phoneNumber){
-        String code = "123456";
-        //TODO:Save code to redis with ttl
-        //return result{
-        //    "code":200,
-        //    "message":"success"
-        //}
-        JSONObject returnJson = new JSONObject();
-        returnJson.put("code",200);
-        returnJson.put("message","success");
-        return returnJson.toString();
+    @Autowired //自动注入依赖
+    private VerificationCodeClient verificationCodeClient;
+    @Autowired
+    private StringRedisTemplate stringRedisTemplate;
+    private final String verificationCodeKeyPrefix = "verification-code:";
+    public ResponseResult<DigitalCodeResponse> generateVerificationCode(String phoneNumber){
+        ResponseResult<DigitalCodeResponse> digitalCodeResponseResponseResult = verificationCodeClient.getDigitalCode(6);
+        int digitalCode = digitalCodeResponseResponseResult.getPayload().getDigitalCode();
+        System.out.println("digitalCode = " + digitalCode);
+        //save code to redis
+        String verificationCodeKey = genCodeKey(phoneNumber);
+        //return result
+        stringRedisTemplate.opsForValue().set(verificationCodeKey,Integer.toString(digitalCode),2, TimeUnit.MINUTES);
+        return ResponseResult.success();
+    }
+    public ResponseResult<VerifiedTokenResponse> verifyCode(String phoneNumber,String code){
+        String verificationCodeKey = genCodeKey(phoneNumber);
+        String verificationCodeInRedis = stringRedisTemplate.opsForValue().get(verificationCodeKey);
+        if(Strings.isNullOrEmpty(verificationCodeInRedis)){
+            return ResponseResult.fail(ConstantResult.VERIFICATION_ERROR.getCode(),ConstantResult.VERIFICATION_ERROR.getMessage());
+        }
+        if(!code.trim().equals(verificationCodeInRedis.trim())){
+            return ResponseResult.fail(ConstantResult.VERIFICATION_ERROR.getCode(),ConstantResult.VERIFICATION_ERROR.getMessage());
+        }
+        // Check user information in Database
+
+        // Generate token
+
+        // return response
+        VerifiedTokenResponse verifiedTokenResponse = new VerifiedTokenResponse();
+        verifiedTokenResponse.setToken("token");
+        return ResponseResult.success(verifiedTokenResponse);
+    }
+    private String genCodeKey(String Number){
+        return verificationCodeKeyPrefix + Number;
     }
 
 }

@@ -1,6 +1,6 @@
-package datatoobject;
+package com.ruoxi.datatoobject;
 
-import com.ruoxi.constant.ConstantResult;
+import com.ruoxi.ConstantResult;
 import lombok.Data;
 import lombok.experimental.Accessors;
 @Data

@@ -1,11 +1,9 @@
 package com.ruoxi.verificationcode.Controller;
 
-import datatoobject.ResponseResult;
-import response.DigitalCodeResponse;
-import net.sf.json.JSONObject;
+import com.ruoxi.datatoobject.ResponseResult;
+import com.ruoxi.response.DigitalCodeResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
