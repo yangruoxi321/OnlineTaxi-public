@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41516a7-f279-4582-a8d4-a62a37036b21" name="Changes" comment="Refactor code and update workspace configuration&#10;&#10;Deleted unnecessary Main.java file and updated encodings.xml to reflect changes in project's directory structure. Modifications in workspace.xml include several feature additions and updates, alongside changes in various pom.xml files and new code files to improve functionality. The update process is set to 'REBASE'.">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/serviceClient/PassengerUserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal-common/src/main/java/com/ruoxi/request/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passenger-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/PassengerUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/passenger-user/src/test/java/com/ruoxi/passengeruser/PassengerUserApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/ruoxi/Service/VerificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-registry/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/constants/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/constants/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/passenger-user/src/main/java/com/ruoxi/passengeruser/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passenger-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/passenger-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/passenger-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/passenger-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +44,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,46 +83,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Maven.api-passenger [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.PassengerApplication.executor": "Run",
-    "Spring Boot.ServiceRegistrationAndDiscoveryServiceApplication.executor": "Run",
-    "Spring Boot.VerificationCodeApplication (1).executor": "Run",
-    "Spring Boot.VerificationCodeApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/22839/IdeaProjects/OnlineTaxi-public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.5908767",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven.api-passenger [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.PassengerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceRegistrationAndDiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VerificationCodeApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.VerificationCodeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/22839/IdeaProjects/OnlineTaxi-public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5908767&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "redis"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ruoxi.request" />
@@ -219,6 +215,7 @@
       <workItem from="1706846387697" duration="7182000" />
       <workItem from="1706930035250" duration="11414000" />
       <workItem from="1721079057079" duration="9818000" />
+      <workItem from="1721096128828" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="Update workspace settings and refactor VerificationCodeController&#10;&#10;This commit includes the removal of redundant code in the VerificationCodeController file, specifically an unused variable. Additionally, it comprises changes to the workspace.xml, including the addition of paths to changed files and alterations in the PropertiesComponent. The update process has been set to 'REBASE'.">
       <option name="closed" value="true" />
